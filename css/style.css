@@ -54,14 +54,7 @@ input[type="text"]:-ms-input-placeholder{
   font-weight: 300;
   font-size: 1em;
 }
-input[type="text"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
-input[type="text"]::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
-input[type="text"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
-input[type="text"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
-input[type="text"]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
-input[type="text"]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
-input[type="text"]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
-input[type="text"]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
 
 
 /*#################
@@ -407,6 +400,10 @@ Start novelties
   display: block;
   margin: 40px auto;
   color: #491b17;
+  -o-transition: 0.3s; 
+  -moz-transition: 0.3s; 
+  -webkit-transition: 0.3s; 
+  transition: 0.3s;
 }
 .btn span{
  display: block;
@@ -418,10 +415,6 @@ Start novelties
 }
 .btn:hover{
  background-color: #efe7d7;
- -o-transition: 0.3s; 
-  -moz-transition: 0.3s; 
-  -webkit-transition: 0.3s; 
-  transition: 0.3s;
 }
 
 /*########
@@ -701,12 +694,12 @@ Start contact
   background-color:transparent;
   margin-top: 20px;
   cursor: pointer;
-}
-.contact__form input[type="submit"]:hover{
- -o-transition: 0.3s; 
+  -o-transition: 0.3s; 
   -moz-transition: 0.3s; 
   -webkit-transition: 0.3s; 
   transition: 0.3s;  
+}
+.contact__form input[type="submit"]:hover{
   background-color: #efe7d7;
 }
 .map-contact{
