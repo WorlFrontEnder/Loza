@@ -1190,6 +1190,12 @@ Start responsive
   .rotang__right{
     margin-right: 0;
   }
+  .infoTop{
+    width: 290px;
+    margin: 57px auto 20px;
+    float: none;
+    overflow: hidden;
+  }
 }
 
 
